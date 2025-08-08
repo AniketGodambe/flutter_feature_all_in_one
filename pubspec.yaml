@@ -40,8 +40,6 @@ dependencies:
   shimmer: ^3.0.0
   syntax_highlight: ^0.4.0
   cached_network_image: ^3.4.1
-
-  # for fetch device contacts
   permission_handler: ^12.0.1
 
   # for fetch device contacts
@@ -49,6 +47,13 @@ dependencies:
 
   # for biometrics
   local_auth: ^2.3.0
+
+  #Open street map
+  latlong2: ^0.9.1
+  flutter_map: ^8.2.1
+  flutter_map_location_marker: ^10.1.0
+  geocoding: ^4.0.0
+  geolocator: ^14.0.2
 
 dev_dependencies:
   flutter_test:

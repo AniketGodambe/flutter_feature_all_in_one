@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_feature_all_in_one/features/biometric/add_biometric_screen.dart';
 import 'package:flutter_feature_all_in_one/features/fetch_device_contacts/fetch_device_contacts_screen.dart';
+import 'package:flutter_feature_all_in_one/features/open_street_maps/open_street_map_screen.dart';
 import 'package:flutter_feature_all_in_one/features/select_image/selecte_image_screen.dart';
 import 'package:flutter_feature_all_in_one/features/list_pagination/list_pagination_screen.dart';
 
@@ -11,10 +12,18 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("Flutter Features")),
-      body: SingleChildScrollView(
-        padding: EdgeInsets.all(16),
-        child: Column(
-          children: List.generate(featureList.length, (index) {
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: GridView.builder(
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 2, // Number of columns
+            crossAxisSpacing: 16, // Horizontal space between grid items
+            mainAxisSpacing: 16, // Vertical space between grid items
+            childAspectRatio:
+                3 / 1, // Width to height ratio of each item (adjust as needed)
+          ),
+          itemCount: featureList.length,
+          itemBuilder: (context, index) {
             return GestureDetector(
               onTap: () {
                 Navigator.push(
@@ -27,8 +36,6 @@ class HomeScreen extends StatelessWidget {
               },
               child: Container(
                 padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-                margin: EdgeInsets.only(bottom: 20),
-                width: double.infinity,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(12),
                   gradient: LinearGradient(
@@ -43,6 +50,7 @@ class HomeScreen extends StatelessWidget {
                     ),
                   ],
                 ),
+                alignment: Alignment.center,
                 child: Text(
                   featureList[index]['featureName'].toString(),
                   style: TextStyle(
@@ -50,10 +58,11 @@ class HomeScreen extends StatelessWidget {
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
                   ),
+                  textAlign: TextAlign.center,
                 ),
               ),
             );
-          }),
+          },
         ),
       ),
     );
@@ -67,6 +76,6 @@ class HomeScreen extends StatelessWidget {
     },
     {"featureName": "List Pagination", "navigation": ListPaginationAPI()},
     {"featureName": "Bio-Metric", "navigation": AddBiometricScreen()},
+    {"featureName": "Open Street Map", "navigation": OpenStreetMapScreen()},
   ];
 }
-  

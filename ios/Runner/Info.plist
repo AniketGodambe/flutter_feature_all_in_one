@@ -37,6 +37,14 @@
     <key>NSFaceIDUsageDescription</key>
     <string>This app uses Face ID to authenticate the user</string>
 
+     <!-- Permission to use the Location -->
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>This app needs access to your location while you are using it.</string>
+
+   <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+   <string>This app needs access to your location even when the app is in the background.</string>
+
+
      <!-- Permission to use the Contacts -->
    <key>NSContactsUsageDescription</key>
    <string>This app requires access to your contacts to connect and find people you know.</string>
