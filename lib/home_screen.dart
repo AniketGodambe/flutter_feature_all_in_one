@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_feature_all_in_one/features/biometric/add_biometric_screen.dart';
 import 'package:flutter_feature_all_in_one/features/fetch_device_contacts/fetch_device_contacts_screen.dart';
+import 'package:flutter_feature_all_in_one/features/form_validation/form_validation_screen.dart';
 import 'package:flutter_feature_all_in_one/features/open_street_maps/open_street_map_screen.dart';
 import 'package:flutter_feature_all_in_one/features/select_image/selecte_image_screen.dart';
 import 'package:flutter_feature_all_in_one/features/list_pagination/list_pagination_screen.dart';
+import 'package:flutter_feature_all_in_one/features/toggle_buttons/toggle_buttons_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -39,7 +41,7 @@ class HomeScreen extends StatelessWidget {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(12),
                   gradient: LinearGradient(
-                    colors: [Color(0xFFD3EEF4), Color(0xFFF1EEC8)],
+                    colors: [Color(0xFF1927DF), Color(0xFF715DE6)],
                   ),
                   boxShadow: [
                     BoxShadow(
@@ -54,7 +56,7 @@ class HomeScreen extends StatelessWidget {
                 child: Text(
                   featureList[index]['featureName'].toString(),
                   style: TextStyle(
-                    color: Colors.black,
+                    color: Colors.white,
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
                   ),
@@ -69,6 +71,8 @@ class HomeScreen extends StatelessWidget {
   }
 
   static List<Map<String, Object>> featureList = [
+    {"featureName": "Toggle Buttons", "navigation": ToggleButtonsScreen()},
+    {"featureName": "Form Validations", "navigation": FormValidationScreen()},
     {"featureName": "Select Image", "navigation": SelecteImageScreen()},
     {
       "featureName": "Fetch Device Contacts",

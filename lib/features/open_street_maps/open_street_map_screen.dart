@@ -264,7 +264,7 @@ class _OpenStreetMapScreenState extends State<OpenStreetMapScreen> {
           ElevatedButton(
             onPressed: () {
               String filePath =
-                  ' lib/features/open_street_maps/open_street_map_screen.dart';
+                  'lib/features/open_street_maps/open_street_map_screen.dart';
               Navigator.push(
                 context,
                 MaterialPageRoute(
