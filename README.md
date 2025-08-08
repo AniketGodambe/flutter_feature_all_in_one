@@ -96,7 +96,7 @@ Info.plist (for iOS)
 
 ### 🔹 4. Open Street Map Integration
 
-## 📋 Description:
+**📋 Description:**
 
 This Flutter app integrates Open Street Map (OSM) to provide interactive and customizable mapping features. Open Street Map is an open-source map service that allows users to display detailed maps, add markers, draw routes, and interact with geographical data within the app.
 
@@ -131,11 +131,6 @@ Initialize the map widget and configure it according to your app's requirements.
 This setup enables comprehensive Open Street Map functionality in your Flutter app for enhanced location-based experiences.
 Refer to the feature-specific source code files for exact implementations and usage examples.
 
-📌 Notes
+## 📌 Notes
+
 Always request permissions at runtime using packages like permission_handler where required.
-
-All code is modular, well-commented, and designed for easy integration and learning.
-
-This project is ideal for beginners exploring device integrations or teams building feature-rich apps.
-
-Feel free to contribute or customize features as per your project needs. Happy coding! 🚀
