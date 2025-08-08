@@ -6,19 +6,19 @@ A Flutter application showcasing multiple essential device integrations, each de
 
 ### 🔹 1. Select Image From Device
 
-📋 Description:
+**📋 Description:**
 
 Users can select and display images from their device gallery or capture photos using the camera, powered by the image_picker package.
 
 🔐 Required Permissions:
 
-Android
+**Android**
 
 android.permission.READ_EXTERNAL_STORAGE
 
 android.permission.CAMERA
 
-iOS
+**iOS**
 
 NSPhotoLibraryUsageDescription
 
@@ -26,23 +26,23 @@ NSCameraUsageDescription
 
 ### 🔹 2. Fetch Contacts From Device
 
-📋 Description:
+**📋 Description:**
 
 Displays the user's contact list using the contacts_service package. Demonstrates how to fetch and display contacts on both Android and iOS devices.
 
 🔐 Required Permissions:
 
-Android
+**Android**
 
 android.permission.READ_CONTACTS
 
-iOS
+**iOS**
 
 NSContactsUsageDescription
 
 ### 🔹 3. List Pagination with API
 
-📋 Description:
+**📋 Description:**
 
 Demonstrates paginated list loading using API data. Fetches data page-by-page and renders it in a scrollable, performant list view.
 
