@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_feature_all_in_one/view_source_code.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:flutter_map_location_marker/flutter_map_location_marker.dart';
 import 'package:geocoding/geocoding.dart';
@@ -257,7 +258,24 @@ class _OpenStreetMapScreenState extends State<OpenStreetMapScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("OpenStreet Map Example")),
+      appBar: AppBar(
+        title: Text("OpenStreet Map Example"),
+        actions: [
+          ElevatedButton(
+            onPressed: () {
+              String filePath =
+                  ' lib/features/open_street_maps/open_street_map_screen.dart';
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => SourceCodeView(filePath: filePath),
+                ),
+              );
+            },
+            child: Text('Source Code'),
+          ),
+        ],
+      ),
       body: SingleChildScrollView(
         child: Column(
           children: [

@@ -82,6 +82,7 @@ flutter:
     - lib/features/list_pagination/
     - lib/features/select_image/
     - lib/features/biometric/
+    - lib/features/open_street_maps/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
