@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_feature_all_in_one/features/biometric/add_biometric_screen.dart';
 import 'package:flutter_feature_all_in_one/features/fetch_device_contacts/fetch_device_contacts_screen.dart';
 import 'package:flutter_feature_all_in_one/features/select_image/selecte_image_screen.dart';
 import 'package:flutter_feature_all_in_one/features/list_pagination/list_pagination_screen.dart';
@@ -65,5 +66,7 @@ class HomeScreen extends StatelessWidget {
       "navigation": FetchDeviceContactsScreen(),
     },
     {"featureName": "List Pagination", "navigation": ListPaginationAPI()},
+    {"featureName": "Bio-Metric", "navigation": AddBiometricScreen()},
   ];
 }
+  

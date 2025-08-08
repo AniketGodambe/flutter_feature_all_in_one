@@ -33,6 +33,10 @@
     <key>NSCameraUsageDescription</key>
     <string>This app needs access to your camera to take photos and videos.</string>
 
+     <!-- Permission to use the Bio-Metric -->
+    <key>NSFaceIDUsageDescription</key>
+    <string>This app uses Face ID to authenticate the user</string>
+
      <!-- Permission to use the Contacts -->
    <key>NSContactsUsageDescription</key>
    <string>This app requires access to your contacts to connect and find people you know.</string>

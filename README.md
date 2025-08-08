@@ -59,6 +59,41 @@ AndroidManifest.xml (for Android)
 
 Info.plist (for iOS)
 
+### 🔹 2. Fetch Contacts From Device
+
+**📋 Description:**
+
+Displays the user's contact list using the contacts_service package. Demonstrates how to fetch and display contacts on both Android and iOS devices.
+
+🔐 Required Permissions:
+
+**Android**
+
+android.permission.READ_CONTACTS
+
+**iOS**
+
+NSContactsUsageDescription
+
+### 🔹 4. Bio Metric Feature
+
+**📋 Description:**
+
+To add biometric authentication in a Flutter app, the most common and straightforward way is to use the local_auth Flutter package, which supports fingerprint, face ID, and device credentials (PIN, pattern, or passcode)
+
+🔐 Required Permissions:
+
+Android & iOS: No special permissions required.
+
+🛠 Setup Instructions
+Add required dependencies in your pubspec.yaml file.
+
+Update permissions in the following files:
+
+AndroidManifest.xml (for Android)
+
+Info.plist (for iOS)
+
 Refer to the feature-specific source code files for exact implementations and usage examples.
 
 📌 Notes

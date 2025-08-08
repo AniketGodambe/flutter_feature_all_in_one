@@ -47,6 +47,9 @@ dependencies:
   # for fetch device contacts
   fast_contacts: ^4.0.0
 
+  # for biometrics
+  local_auth: ^2.3.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -73,6 +76,7 @@ flutter:
     - lib/features/fetch_device_contacts/
     - lib/features/list_pagination/
     - lib/features/select_image/
+    - lib/features/biometric/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
