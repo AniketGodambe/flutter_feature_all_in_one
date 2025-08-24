@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_feature_all_in_one/features/biometric/add_biometric_screen.dart';
 import 'package:flutter_feature_all_in_one/features/fetch_device_contacts/fetch_device_contacts_screen.dart';
 import 'package:flutter_feature_all_in_one/features/form_validation/form_validation_screen.dart';
+import 'package:flutter_feature_all_in_one/features/intro_screen/intro_scren.dart';
 import 'package:flutter_feature_all_in_one/features/open_street_maps/open_street_map_screen.dart';
 import 'package:flutter_feature_all_in_one/features/select_image/selecte_image_screen.dart';
 import 'package:flutter_feature_all_in_one/features/list_pagination/list_pagination_screen.dart';
@@ -71,6 +72,7 @@ class HomeScreen extends StatelessWidget {
   }
 
   static List<Map<String, Object>> featureList = [
+    {"featureName": "Intro Screen", "navigation": IntroScreen()},
     {"featureName": "Toggle Buttons", "navigation": ToggleButtonsScreen()},
     {"featureName": "Form Validations", "navigation": FormValidationScreen()},
     {"featureName": "Select Image", "navigation": SelecteImageScreen()},

@@ -78,6 +78,7 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
+    - assets/intro-assets/
     - lib/features/fetch_device_contacts/
     - lib/features/list_pagination/
     - lib/features/select_image/
@@ -85,6 +86,7 @@ flutter:
     - lib/features/open_street_maps/
     - lib/features/toggle_buttons/
     - lib/features/form_validation/
+    - lib/features/intro_screen/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
